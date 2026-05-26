@@ -1,0 +1,12 @@
+.parent{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 1000px;
+    height: 10px;
+}
+
+.child{
+    width: 10px;
+    height:10px;
+}
