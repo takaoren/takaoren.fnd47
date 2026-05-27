@@ -1,13 +1,13 @@
 "use strict";
 // 1行目に記載している "use strict" は削除しないでください
 
-let container = document.getElementById("container" + "0");
+let container = document.getElementById("container0");
 let str=[];
 let x;
 
 
-function wanihousyutu(){
-x=wanisuu.value;   
+function gazou(){
+x=pixeldata.value;   
 
 for(let i=1;i<=100;i++){
     str[i]=[];
@@ -30,14 +30,9 @@ for(let i=1;i<=100;i++){
         container.appendChild(div);
     }
 }
-// for(let i=1;i<=100;i++){
-//     for(let j=1;j<=100;j++){
-//         container.removeChild();
-//     }
-// }
 }
 
 //let nameText = document.getElementById('wanisuu');
 let checkButton = document.getElementById('wanibutton');
 
-checkButton.addEventListener('click', wanihousyutu);
+checkButton.addEventListener('click', gazou);
