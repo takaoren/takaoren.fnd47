@@ -33,6 +33,6 @@ for(let i=1;i<=100;i++){
 }
 
 //let nameText = document.getElementById('wanisuu');
-let checkButton = document.getElementById('wanibutton');
+let checkButton = document.getElementById('buttonresult');
 
 checkButton.addEventListener('click', gazou);
