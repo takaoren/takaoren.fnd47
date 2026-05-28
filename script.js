@@ -1,13 +1,13 @@
 "use strict";
 // 1行目に記載している "use strict" は削除しないでください
 
-let container = document.getElementById("container0");
+let container = document.getElementById("container" + "0");
 let str=[];
 let x;
 
 
-function gazou(){
-x=pixeldata.value;   
+function housyutu(){
+x=picdata.value;   
 
 for(let i=1;i<=100;i++){
     str[i]=[];
@@ -21,9 +21,6 @@ for(let i=1;i<=100;i++){
         x=x.substring(0,x.length-2);
         str[i][j][2]=x.substring(x.length-2,x.length);
         x=x.substring(0,x.length-2);
-        // console.log(str[i][j][0]);
-        // console.log(str[i][j][1]);
-        // console.log(str[i][j][2]);
 
         div.className = "child";
         div.style.backgroundColor = "#"+ str[i][j][0]+str[i][j][1]+str[i][j][2];
@@ -35,4 +32,4 @@ for(let i=1;i<=100;i++){
 //let nameText = document.getElementById('wanisuu');
 let checkButton = document.getElementById('buttonresult');
 
-checkButton.addEventListener('click', gazou);
+checkButton.addEventListener('click', housyutu);
